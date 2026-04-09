@@ -1,0 +1,11 @@
+package quiz;
+
+public class KakaoPay implements Pay{
+
+    @Override
+    public boolean pay(int amount){
+        System.out.println("카카오 시스템 연결");
+        System.out.println(amount+"원 결제 시도");
+        return true;
+    }
+}
