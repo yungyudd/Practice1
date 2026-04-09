@@ -33,7 +33,8 @@ public class MyHashSetV3<E> implements MySet<E> {  //E 제네릭 타입 어떤 �
         }else{
             return false;
         }
-    }
+    } // remove 추가
+    // 추가
     public boolean contains(E searchValue){
         int hashIndex = hashIndex(searchValue);
         LinkedList<E> bucket = buckets[hashIndex];
